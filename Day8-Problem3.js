@@ -28,6 +28,7 @@ const palindromePartioning=(s)=>{
     }
 
     backtrack(0, []);
+
     return res;
 }
 console.log(palindromePartioning("aab"))
