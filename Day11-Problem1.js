@@ -1,3 +1,4 @@
+//alternate Sort
 function alternativeSort(arr){
     arr.sort((a,b)=>a-b)
     let i=0;j=arr.length-1;
