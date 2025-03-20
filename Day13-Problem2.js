@@ -1,32 +1,17 @@
 // sort 1 to N by swapping adjacent el
 function mySortedArr(A, B) {
     let n = A.length;
-    let i = 0;
 
-    while (i < n - 1) {
-        if (B[i] === 1) {
-            let j = i;
-            while (j < n - 1 && B[j] === 1) {
-                j++;  // Expand the swappable segment
-            }
-
-            // Sort only the allowed segment
-            let segment = A.slice(i, j + 1).sort((a, b) => a - b);
-            A.splice(i, segment.length, ...segment);
-
-            i = j + 1; // Move to the next non-swappable region
-        } else {
-            i++;
+    // Try swapping adjacent elements where B[i] is 1
+    for (let i = 0; i < n - 1; i++) {
+        if (B[i] === 1 && A[i] > A[i + 1]) {
+            [A[i], A[i + 1]] = [A[i + 1], A[i]];
+            i = Math.max(-1, i - 2); // Move back to recheck after swapping
         }
     }
 
     // Check if sorted
-    for (let k = 0; k < n; k++) {
-        if (A[k] !== k + 1) {
-            return false;
-        }
-    }
-    return true;
+    return A.every((val, idx) => val === idx + 1);
 }
 
 // Test Case
