@@ -35,3 +35,13 @@ function merge(arr,left,mid,right){
     }
 }
 
+function merge_sort(arr,left,right){
+    if(left>=right){
+        return
+    }
+    let mid=Math.floor(left+(right-left))
+    merge_sort(arr,left,mid)
+    merge_sort(arr,mid+1,right)
+    merge(arr,left,mid,right)
+    }
+    
