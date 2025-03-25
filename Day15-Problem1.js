@@ -1,3 +1,4 @@
+//linear_search
 function linear_search(arr,target){
    
   for(let i=0;i<arr.length;i++){
