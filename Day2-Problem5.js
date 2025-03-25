@@ -1,4 +1,4 @@
-
+//GCD or HCF
 function findGcd(a,b){
     let gcd=1;
     for(let i=1;i<=Math.min(a,b);i++){
