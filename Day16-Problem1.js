@@ -21,6 +21,8 @@ console.log(duplicates([4,2,1,5,2,3,1,6]))
 function findDuplicates(arr){
 let freq={}
 let dupliactes=[]
+let maxCount=0;
+let maxEl;
 
 for(let num of arr){
     if(freq[num]){
@@ -30,12 +32,22 @@ for(let num of arr){
         freq[num]=1
     }
 }
-
 for(let key in freq){
-   if(freq[key]>1){
-    dupliactes.push(Number(key))
-   }
+    if(freq[key]>1){
+        dupliactes.push(Number(key))
+    }
+    // if 1 hi el hai toh 
+    if(freq[key]>maxCount){
+        maxCount=freq[key];
+        maxEl=[Number(key)]
+    }
+    // if 2 el ka same count hua toh 
+    else if(freq[key]===maxCount){
+        maxEl.push(Number(key))
+    }
 }
-return dupliactes
+
+
+return {dupliactes,maxEl,maxCount}
 }
 console.log(findDuplicates([4,2,1,5,2,3,1,6]))
