@@ -10,7 +10,8 @@ function rotateArraySlice(arr, k) {
 // Test cases
 console.log(rotateArraySlice([1, 2, 3, 4, 5], 2));
 
-//alternate method
+//alternate method: using for loop
+
 
 function rotateK(arr, k) {
     let n = arr.length;
@@ -33,9 +34,9 @@ function rotateK(arr, k) {
         arr[i] = temp[i];
     }
 
-    return arr; // Return the rotated array
+    return arr; 
 }
 
 // Test cases
-console.log(rotateK([1, 2, 3, 4, 5], 2)); // Output: [4, 5, 1, 2, 3]
+console.log(rotateK([1, 2, 3, 4, 5], 2)); 
 
