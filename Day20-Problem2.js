@@ -13,5 +13,6 @@ function printFrequencies(arr){
         count=1;
     }
   }
+  
 }
 console.log(printFrequencies([4,2,2,8,4,4,8,8]))
