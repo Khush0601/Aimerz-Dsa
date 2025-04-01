@@ -1,14 +1,14 @@
 //search the el in a rotated sorted arr: given arr and target find the index of target el
 // linear search
-// function searchInRotatedArr(arr,target){
-//     for(let i=0;i<arr.length;i++){
-//         if(arr[i]===target){
-//             return i
-//         }
-//     }
-//     return -1;
-// }
-// console.log(searchInRotatedArr([4,5,6,7,0,1,2],0))
+function searchInRotatedArr(arr,target){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]===target){
+            return i
+        }
+    }
+    return -1;
+}
+console.log(searchInRotatedArr([4,5,6,7,0,1,2],0))
 
 //by binary search:
 
