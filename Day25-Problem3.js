@@ -1,4 +1,4 @@
-// two non-repeating el 
+// majority el in array
 function majority(arr){
     let freq={}
     let majorityCount=Math.ceil(arr.length/2);
