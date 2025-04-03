@@ -1,4 +1,4 @@
-// largest sum contiguous subarray with at most one deletion:
+// find largest sum contiguous subarray with at most one deletion:
 
 function maxSumSubArray(arr){
 let n=arr.length;
