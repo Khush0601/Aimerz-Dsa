@@ -1,4 +1,4 @@
-
+// find the largest rectangular area in a histogram:
 function maxRectangularArea(heights){
   let maxArea=0;
   let n=heights.length
@@ -8,6 +8,7 @@ function maxRectangularArea(heights){
     for(let j=i;j<n;j++){
         minHeight=Math.min(minHeight,heights[j]);
         let width=j-i+1;
+        
         maxArea=Math.max(maxArea,minHeight*width)
     }
   }
