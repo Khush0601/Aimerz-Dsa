@@ -79,3 +79,14 @@ function len_rec(head){
     // return !head? 0:1+len_rec(head.next)
 }
 console.log(len_rec(head))
+
+// insertition 
+function insertionAtHead(head,num){
+    //create the listNode for the num
+    let node=new listNode(num);
+
+    //set next of node as the head:
+    node.next=head;
+    return node;
+}
+traverse(insertionAtHead(head,19))
