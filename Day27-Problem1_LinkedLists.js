@@ -92,6 +92,7 @@ function insertionAtHead(head,num){
 traverse(insertionAtHead(head,19))
 
 //simple code to insert at kth position:
+
 function insertAtK(head,data,k){
     let newNode=new listNode(data);
     //if inserting at the beginning:
@@ -123,3 +124,25 @@ function insertAtK(head,data,k){
 
 head=insertAtK(head,7,2)
 traverse(head)
+
+// insert el by recursion:
+function insertAtRec(head, data, k) {
+    if (k === 0) {
+        let node = new listNode(data);
+        node.next = head; 
+        return node;
+    }
+
+    if (!head) {
+        console.log("invalid position");
+        return null;
+    }
+
+    head.next = insertAtRec(head.next, data, k - 1);
+    return head;
+}
+
+head = insertAtRec(head, 7, 2); 
+traverse(head);               
+
+
