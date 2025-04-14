@@ -162,4 +162,20 @@ function deleteAtK(head,k){
 head=deleteAtK(head,2)
 traverse(head)
 
+ // delete by recursion:
+ function deleteAtRec(head,k){
+    if(!head){
+        console.log('invalid position')
+        return null
+    }
+    if(k===0){
+        return head.next;
+    }
+    head.next=deleteAtRec(head.next,k-1)
+    return head
+
+ }
+ head=deleteAtRec(head,2)
+ traverse(head)
+
 
