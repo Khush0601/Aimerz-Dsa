@@ -69,3 +69,13 @@ function len(head){
     return len;
 }
 console.log(len(head)); 
+
+// length by recursion
+function len_rec(head){
+    if(!head){
+        return 0;
+    }
+    return 1+len_rec(head.next)
+    // return !head? 0:1+len_rec(head.next)
+}
+console.log(len_rec(head))
