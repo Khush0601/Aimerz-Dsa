@@ -56,3 +56,16 @@ function traverse_rec(head){
     traverse_rec(head.next)
 }
 traverse_rec(head)
+
+// length of linkedList:
+
+function len(head){
+    let len=0;
+    let temp=head;
+    while(temp){
+      len++;
+      temp=temp.next;
+    }
+    return len;
+}
+console.log(len(head)); 
