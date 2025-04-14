@@ -145,4 +145,21 @@ function insertAtRec(head, data, k) {
 head = insertAtRec(head, 7, 2); 
 traverse(head);               
 
+// delete a num at kTH position:
+
+//simle method:
+function deleteAtK(head,k){
+    if(!head){
+        console.log("invalid position")
+        return null
+    }
+    if(k===0){
+        return head.next
+    }
+    head.next=deleteAtK(head.next,k-1)
+    return head;
+}
+head=deleteAtK(head,2)
+traverse(head)
+
 
