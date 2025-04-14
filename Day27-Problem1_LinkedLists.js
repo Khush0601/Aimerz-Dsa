@@ -44,3 +44,15 @@ function traverse(head){
     console.log()
 }
 traverse(head)
+
+// traversal by recursion
+
+function traverse_rec(head){
+    //base condition
+    if(!head){
+        return ;
+    }
+    process.stdout.write(head.data+" -> ")
+    traverse_rec(head.next)
+}
+traverse_rec(head)
