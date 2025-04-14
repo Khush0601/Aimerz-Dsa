@@ -90,3 +90,36 @@ function insertionAtHead(head,num){
     return node;
 }
 traverse(insertionAtHead(head,19))
+
+//simple code to insert at kth position:
+function insertAtK(head,data,k){
+    let newNode=new listNode(data);
+    //if inserting at the beginning:
+    if(k===0){
+        newNode.next=head;
+        return newNode;
+    }
+    let temp=head;
+    let count=0;
+    // traverse to the (k-1)th node:
+
+    while(temp!==null && count<k-1){
+        temp=temp.next;
+        count++;
+    }
+
+    // if position is invalid:
+    if(temp===null){
+        console.log('invalid position')
+        return head;
+    }
+
+    //insert the node:
+    newNode.next=temp.next;
+    temp.next=newNode;
+
+    return head;
+}
+
+head=insertAtK(head,7,2)
+traverse(head)
