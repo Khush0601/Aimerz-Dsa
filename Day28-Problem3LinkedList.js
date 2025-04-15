@@ -1,4 +1,4 @@
-// given sorted LinkedlIst and deletes any duplicates nodes from the list:
+// given sorted Linkedlist and deletes any duplicates nodes from the list:
 
 class Node{
     constructor(data){
