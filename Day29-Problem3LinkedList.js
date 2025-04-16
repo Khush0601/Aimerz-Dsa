@@ -25,11 +25,13 @@ function rearrangeEvenOdd(head) {
         if (evenHead === null) {
           evenHead = current;
           evenTail = current;
-        } else {
+        } 
+        else {
           evenTail.next = current;
           evenTail = evenTail.next;
         }
-      } else {
+      } 
+      else {
         // Odd number
         if (oddHead === null) {
           oddHead = current;
@@ -54,6 +56,7 @@ function rearrangeEvenOdd(head) {
   
     return evenHead !== null ? evenHead : oddHead;
   }
+  
   
 // Helper function to print list
 function printList(head) {
