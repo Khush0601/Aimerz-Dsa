@@ -10,7 +10,9 @@ class Node {
   
 
 function rearrangeEvenOdd(head) {
-    if (!head) return null;
+    if (!head) {
+        return null;
+    }
   
     let evenHead = null, evenTail = null;
     let oddHead = null, oddTail = null;
