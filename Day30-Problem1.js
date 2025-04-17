@@ -80,5 +80,9 @@ function printList(head) {
   
   let newHead = rearrangeEvenOdd(head);
   printList(newHead);
+
+
+
+  
   
   
