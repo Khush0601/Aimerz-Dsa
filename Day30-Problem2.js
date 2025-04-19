@@ -18,6 +18,8 @@ function printList(head) {
       current = current.next;
     }
     console.log(result + 'null');
+
+    
   }
 
   //step3:fun. to get the tail of a linked list :
@@ -109,7 +111,7 @@ let head = new Node(30);
   printList(head);
 
 
-  
+
 
   //sort it:
   head=quicksort(head);
