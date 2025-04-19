@@ -108,6 +108,9 @@ let head = new Node(30);
   console.log('original linked list')
   printList(head);
 
+
+  
+
   //sort it:
   head=quicksort(head);
   console.log('sorting')
