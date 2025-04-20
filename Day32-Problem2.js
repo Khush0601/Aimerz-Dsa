@@ -44,6 +44,7 @@ let loopstart=detectloop(head);
 
 if(loopstart==='No loop'){
     console.log(loopstart)
+    
 }
 else{
     console.log("loop starts at node with value:",loopstart.data)
