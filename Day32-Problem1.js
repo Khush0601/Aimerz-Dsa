@@ -1,5 +1,5 @@
 //find the mid node of linked list:
-
+//step1:node class
 class Node {
     constructor(data) {
       this.data = data;
