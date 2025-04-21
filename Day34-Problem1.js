@@ -12,6 +12,7 @@ class Node {
       node.next = sortedHead;
       return node;
     }
+    
   
     let current = sortedHead;
     while (current.next && current.next.data < node.data) {
