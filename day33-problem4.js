@@ -1,4 +1,4 @@
-// check the linked list of strings from a palindrome:
+// check the linked list of strings form a palindrome or not:
 
 //step1:class node
 class Node {
