@@ -1,3 +1,4 @@
+//sort the linked li
 // Step 1: Class Node
 class Node {
     constructor(data) {
@@ -6,13 +7,14 @@ class Node {
     }
   }
   
+  
   // Step 2: Function to insert a node in sorted order
   function sortedInsert(sortedHead, node) {
     if (!sortedHead || node.data < sortedHead.data) {
       node.next = sortedHead;
       return node;
     }
-    
+
   
     let current = sortedHead;
     while (current.next && current.next.data < node.data) {
