@@ -1,4 +1,4 @@
-// rearrange the linked list in zig-zag pattern:
+// rearrange the linked list in zig-zag pattern such that a < b > c < d > e ...:
 
 //step1:class node
 class Node {
