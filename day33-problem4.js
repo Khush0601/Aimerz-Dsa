@@ -23,7 +23,7 @@ function isPalindromeList(head){
 }
 
 
-//step4:function to print:
+//step3:function to print:
 
 function printList(head) {
     let current = head;
@@ -35,7 +35,7 @@ function printList(head) {
     console.log(result + 'null');
  }
 
- //step5:linked list
+ //step4:linked list
 let head = new Node("abc");
 head.next = new Node("abc");
 head.next.next = new Node("cba");
